@@ -1,3 +1,10 @@
 module FastSolvers
+    using SparseArrays
+    using LinearAlgebra
+    using LinearSolve
 
-end # module FastSolvers
+    import QuasiMonteCarlo.sample
+    import QuasiMonteCarlo.SamplingAlgorithm
+    import ModelingToolkit.PDESystem
+    import ModelingToolkit.Equation
+end
