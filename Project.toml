@@ -1,0 +1,4 @@
+name = "FastSolvers"
+uuid = "afc03370-3a10-4444-b401-158123c3c69f"
+authors = ["Anant Thazhemadam <anant.thazhemadam@gmail.com>"]
+version = "0.1.0"
