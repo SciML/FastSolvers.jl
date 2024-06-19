@@ -2,3 +2,9 @@ name = "FastSolvers"
 uuid = "afc03370-3a10-4444-b401-158123c3c69f"
 authors = ["Anant Thazhemadam <anant.thazhemadam@gmail.com>"]
 version = "0.1.0"
+
+[deps]
+LinearSolve = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
+ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
+NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
+QuasiMonteCarlo = "8a4e6c94-4038-4cdc-81c3-7e6ffdb2a71b"
