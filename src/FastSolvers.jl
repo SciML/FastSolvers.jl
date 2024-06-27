@@ -7,4 +7,6 @@ import QuasiMonteCarlo.sample
 import QuasiMonteCarlo.SamplingAlgorithm
 import ModelingToolkit.PDESystem
 import ModelingToolkit.Equation
+
+include("kernels.jl")
 end
