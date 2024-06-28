@@ -1,9 +1,8 @@
-using Documenter, MethodOfLines
+using Documenter, FastSolvers
 
 cp("./docs/Manifest.toml", "./docs/src/assets/Manifest.toml", force = true)
 cp("./docs/Project.toml", "./docs/src/assets/Project.toml", force = true)
 
-# Make sure that plots don't throw a bunch of warnings / errors!
 ENV["GKSwstype"] = "100"
 
 include("pages.jl")
@@ -14,7 +13,7 @@ makedocs(sitename = "FastSolvers.jl",
     modules = [FastSolvers],
     warnonly = [:docs_block, :missing_docs, :cross_references],
     format = Documenter.HTML(assets = ["assets/favicon.ico"],
-        canonical = "https://github.com/SciML/FastSolvers.jl"),
+        canonical = "https://docs.sciml.ai/FastSolvers/stable/"),
     pages = pages)
 
 deploydocs(repo = "https://github.com/SciML/FastSolvers.jl"; push_preview = true)
