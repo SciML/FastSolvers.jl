@@ -4,9 +4,8 @@ pages = [
     "Wavelet Discretizations" => "wavelets.md",
     "Random Feature Discretizations" => "rfnn.md",
     "Tutorials" => [
-        "tutorials/poisson.md",
-        "tutorials/biharmonic.md",
-        "tutorials/strum_liouville.md",
+        "tutorials/BVP.md",
+        "tutorials/IVP.md",
     ],
     "Benchmarks" => [
         "benchmark/linear_pdes.md",
