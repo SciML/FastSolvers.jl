@@ -1,6 +1,6 @@
 # [FastSolvers.jl] (@id index)
 
-[FastSolvers.jl](https://github.com/SciML/FastSolvers.jl) is a Julia package for discretizing symbolically defined PDEs. It complements [MethodOfLines.jl](https://github.com/SciML/FastSolvers.jl) by providing additional collocation based discretization schemes based on: 
+[FastSolvers.jl](https://github.com/SciML/FastSolvers.jl) is a Julia package for discretizing symbolically defined PDEs. It complements [MethodOfLines.jl](https://github.com/SciML/FastSolvers.jl) by providing additional collocation discretization schemes based on: 
 
  - RKHS kernels
  - Wavelets
@@ -32,7 +32,7 @@ For better or worse, all numerical methods that have complexity $\mathcal{O}(N^{
 
  --- 
 
- ## Why do we need fast solvers?
+ ## Why do we need FastSolvers.jl ?
 
 Outer-loop problems including:
 
@@ -40,4 +40,6 @@ Outer-loop problems including:
  - Uncertainty propagation
  - Control
 
-with PDE in loop are notoriously expensive (See [Peherstorfer](https://arxiv.org/abs/1806.10761)). When solving such problems with large $N$, quadratic complexity is not good enough. This necessitates the development of fast-solver methods.
+with PDE in loop are notoriously expensive (See [Peherstorfer](https://arxiv.org/abs/1806.10761)). When solving such problems with large $N$, quadratic complexity is not good enough. This necessitates the development of fast-solver methods. Indeed, there has been a lot of activity in this field; with the machine learning community recently jumping in. 
+
+[FastSolvers.jl](https://github.com/SciML/FastSolvers.jl) is being developed based on this consideration. In addition to providing users with a host of discretization methods, we also house a benchmark suite for linear and non-linear PDEs.

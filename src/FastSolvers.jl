@@ -9,4 +9,6 @@ import ModelingToolkit.PDESystem
 import ModelingToolkit.Equation
 
 include("kernels.jl")
+include("wavelets.jl")
+include("rfnn.jl")
 end
