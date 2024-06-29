@@ -1,9 +1,5 @@
 pages = [
-    "index.md", "Differential operators" => [
-        "Inhomogenous Laplacian" => "operators/differential/laplcian.md",
-        "Inhomogenous Bi-harmonic operator" => "operators/differential/biharmonic.md",
-        "Up-, Down- wind operators" => "operators/differential/wind.md"
-    ],
+    "index.md", "Differential operators" => "operators/differential.md",
     "Discretizations" => ["RKHS discretizations" => "discretizations/rbf.md",
         "Wavelet Discretizations" => "discretizations/wavelets.md",
         "Random Feature Discretizations" => "discretizations/rfnn.md"
