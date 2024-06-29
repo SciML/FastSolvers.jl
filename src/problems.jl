@@ -8,9 +8,7 @@ struct Δ² <: AbstractDifferentialOperator end
 abstract type AbstractFastSolver end
 
 struct BVPSolver <: AbstractFastSolver
-
 end
 
 struct IVPSolver <: AbstractFastSolver
-
 end

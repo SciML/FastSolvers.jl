@@ -12,16 +12,16 @@ function (k::SquaredExponentialKernel)(X, Y)
 end
 
 function (k::SquaredExponentialKernel)(X, Y, ::∇)
-    -(2/k.σ^2)*exp(-(norm(X - Y) / k.σ)^2)*(X .- Y)
+    -(2 / k.σ^2) * exp(-(norm(X - Y) / k.σ)^2) * (X .- Y)
 end
 
 function (k::SquaredExponentialKernel)(X, Y, ::Δ)
-    Hess = -(2/k.σ^2)*exp(-(norm(X - Y) / k.σ)^2) * (-2/k.σ^2 * (X-Y)*(X-Y)' + I)
+    Hess = -(2 / k.σ^2) * exp(-(norm(X - Y) / k.σ)^2) *
+           (-2 / k.σ^2 * (X - Y) * (X - Y)' + I)
     Hess
 end
 
 function (k::SquaredExponentialKernel)(X, Y, ::Δ²)
-    
 end
 
 """Matern52Kernel
