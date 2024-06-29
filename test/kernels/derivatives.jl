@@ -2,6 +2,7 @@ begin
     σ = 1e-1
     kernel = SquaredExponentialKernel(σ)
 
+    # Scalar valued inputs
     x = 1.0
     y = 1.0
     Ops = [∇(), Δ()]
@@ -16,6 +17,7 @@ begin
     @test f1 == ForwardDiff.derivative(kernel_eval, x)
     @test f2 == ForwardDiff.derivative(kernel_deriv, x)
 
+    # Vector valued inputs
     x = rand(3)
     y = rand(3)
     kernel_eval = z -> kernel(z, y)

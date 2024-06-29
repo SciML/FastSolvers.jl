@@ -5,7 +5,6 @@ version = "0.1.0"
 
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-LinearSolve = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
 ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
 NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
 QuasiMonteCarlo = "8a4e6c94-4038-4cdc-81c3-7e6ffdb2a71b"
@@ -14,9 +13,9 @@ Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 
 [compat]
 LinearAlgebra = "1.10"
-LinearSolve = "2.30.2"
 ModelingToolkit = "9.20.0"
 NonlinearSolve = "3.13.1"
 QuasiMonteCarlo = "0.3.3"
 SparseArrays = "1.10"
+Symbolics = "5.32.0"
 julia = "1.10"

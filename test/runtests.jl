@@ -1,6 +1,11 @@
 using FastSolvers
 using Test
 using ForwardDiff
+using QuasiMonteCarlo
+using SparseArrays
+using LinearAlgebra
+using NonlinearSolve
+using BenchmarkTools
 
 @testset "RKHS kernels" begin
     include("kernels/interface.jl")

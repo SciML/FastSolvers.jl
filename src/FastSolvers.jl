@@ -1,10 +1,12 @@
 module FastSolvers
 using SparseArrays
-using LinearSolve
+using NonlinearSolve
 using LinearAlgebra
+using QuasiMonteCarlo
 
-import QuasiMonteCarlo.sample
 import QuasiMonteCarlo.SamplingAlgorithm
+import QuasiMonteCarlo.sample
+
 import ModelingToolkit.PDESystem
 import ModelingToolkit.Equation
 
