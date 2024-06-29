@@ -27,3 +27,7 @@ function sample_collocation_points(domain::T, num_points::Tuple{Int, Int}, sampl
     end
     return interior_points, reduce(vcat, boundary_points)
 end
+
+function LinearAlgebra.UpperTriangular(a::Float64)
+    return a
+end
