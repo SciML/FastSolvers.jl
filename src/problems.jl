@@ -2,7 +2,7 @@ abstract type AbstractDifferentialOperator end
 
 # First order derivatives
 struct ∂₁ <: AbstractDifferentialOperator end
-struct ∂₂  <: AbstractDifferentialOperator end
+struct ∂₂ <: AbstractDifferentialOperator end
 struct ∂₃ <: AbstractDifferentialOperator end
 
 # Second order derivatives
@@ -22,13 +22,10 @@ struct ∂₁₁₂₂ <: AbstractDifferentialOperator end
 struct ∂₂₂₃₃ <: AbstractDifferentialOperator end
 struct ∂₁₁₃₃ <: AbstractDifferentialOperator end
 
-
 abstract type AbstractPDEProblem end
 
 struct BVPProblem <: AbstractPDEProblem
-
 end
 
 struct IVPProblem <: AbstractPDEProblem
-    
 end

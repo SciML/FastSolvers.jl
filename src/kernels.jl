@@ -2,19 +2,13 @@ abstract type AbstractKernel end
 
 struct SquaredExponentialKernel{T} <: AbstractKernel
     σ::T
-    f::Function
-    ∇f::Vector{Function}
-    ∇²f::Matrix{Function}
-    ∇³f::Array{Function, 3}
-    ∇⁴f::Array{Function, 4}
 end
+function (k::SquaredExponentialKernel)(X, Y)
+    exp(-(norm(X - Y) / k.σ)^2)
+end
+function (k::SquaredExponentialKernel)(X, Y, ::∂₁) end
 
 struct Matern52Kernel{T} <: AbstractKernel
     σ::T
     ρ::T
-    f::Function
-    ∇f::Vector{Function}
-    ∇²f::Matrix{Function}
-    ∇³f::Array{Function, 3}
-    ∇⁴f::Array{Function, 4}
 end
