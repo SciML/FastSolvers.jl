@@ -16,4 +16,4 @@ makedocs(sitename = "FastSolvers.jl",
         canonical = "https://docs.sciml.ai/FastSolvers/stable/"),
     pages = pages)
 
-deploydocs(repo = "https://github.com/SciML/FastSolvers.jl"; push_preview = true)
+deploydocs(repo = "github.com/SciML/FastSolvers.jl"; push_preview = true)
