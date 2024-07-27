@@ -12,3 +12,6 @@ end
 
 struct IVPSolver <: AbstractFastSolver
 end
+
+struct KernelSolver <: AbstractFastSolver
+end

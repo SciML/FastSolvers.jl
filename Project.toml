@@ -4,11 +4,13 @@ authors = ["Anant Thazhemadam <anant.thazhemadam@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
 NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
 QuasiMonteCarlo = "8a4e6c94-4038-4cdc-81c3-7e6ffdb2a71b"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Surrogates = "6fc51010-71bc-11e9-0e15-a3fcc6593c49"
 Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 
 [compat]

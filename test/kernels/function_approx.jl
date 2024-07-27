@@ -1,3 +1,4 @@
+# Test one instance of the approximator
 begin
     N = 1000
     N0 = 100
@@ -17,5 +18,15 @@ begin
     sol = solve(prob)
     a = sol.u
 
-    @test (maximum(K * a .- y))^2 < 1e-4
+    @test maximum(K * a .- y) < 1e-2
 end
+
+
+N = 1000
+N0 = 100
+x = LinRange(-2.0, 2.0, N)
+y = sin.(14 * x) .* cos.(15 * x)
+kernel = SquaredExponentialKernel(1e-1)
+Ops = [∇(), Δ()]
+kernel_eval = z -> kernel(z, y)
+kernel_deriv = z -> kernel(z, y, Ops[1])
