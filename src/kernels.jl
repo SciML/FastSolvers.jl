@@ -31,3 +31,12 @@ struct Matern52Kernel{T} <: AbstractKernel
     σ::T
     ρ::T
 end
+
+
+"""Matern72Kernel
+
+"""
+struct Matern72Kernel{T} <: AbstractKernel
+    σ::T
+    ρ::T
+end
