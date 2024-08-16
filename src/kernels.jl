@@ -23,20 +23,3 @@ end
 
 function (k::SquaredExponentialKernel)(X, Y, ::Δ²)
 end
-
-"""Matern52Kernel
-
-"""
-struct Matern52Kernel{T} <: AbstractKernel
-    σ::T
-    ρ::T
-end
-
-
-"""Matern72Kernel
-
-"""
-struct Matern72Kernel{T} <: AbstractKernel
-    σ::T
-    ρ::T
-end
