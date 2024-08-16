@@ -10,8 +10,8 @@ Dxx = Differential(x)^2
 f = u -> u^2 - 1
 eq = Dxx(u(x)) ~ f(u(x))
 domains = [x ∈ (-1.0, 1.0)]
-bcs = [u(-1)~0.0, u(1)~0.0]
-@named pde_system = PDESystem(eq, bcs, domains,[x],u)
+bcs = [u(-1) ~ 0.0, u(1) ~ 0.0]
+@named pde_system = PDESystem(eq, bcs, domains, [x], u)
 
 discretizer = FastSolver(SquaredExponentialKernel(1e-1), BVP(), Nonlinear())
 discretization = discretize(pde_system, discretizer)
