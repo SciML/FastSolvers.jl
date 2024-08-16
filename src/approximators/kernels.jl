@@ -1,9 +1,7 @@
-abstract type AbstractKernel end
-
 """SquaredExponentialKernel
 
 """
-struct SquaredExponentialKernel{T} <: AbstractKernel
+struct SquaredExponentialKernel{T} <: AbstractApproximator
     σ::T
 end
 

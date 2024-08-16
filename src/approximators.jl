@@ -1,11 +1,11 @@
 # Abstract approximators
 abstract type AbstractApproximator end
 
-include("kernels.jl")
+include("approximators/kernels.jl")
 export SquaredExponentialKernel, Matern52Kernel, Matern72Kernel
 
-include("wavelets.jl")
+include("approximators/wavelets.jl")
 export DaubechiesWavelets
 
-include("rfnn.jl")
+include("approximators/rfnn.jl")
 export WeightedRandomFeatures, SimpleRandomFeatures

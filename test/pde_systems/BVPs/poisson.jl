@@ -13,8 +13,5 @@ domains = [x ∈ (-1.0, 1.0)]
 bcs = [u(-1)~0.0, u(1)~0.0]
 @named pde_system = PDESystem(eq, bcs, domains,[x],u)
 
-discretizer = FastSolver()
-discretization = discretize(pde_system, discretizer)
-
-discretizer = BVPSolver()
+discretizer = FastSolver(SquaredExponentialKernel(1e-1), BVP(), Nonlinear())
 discretization = discretize(pde_system, discretizer)
