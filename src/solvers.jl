@@ -5,7 +5,8 @@ struct FastSolver <: AbstractFastSolver
     problem::AbstractProblem
     class::AbstractClass
 
-    function FastSolver(approx::AbstractApproximator, prob::AbstractProblem, class::AbstractClass)
+    function FastSolver(
+            approx::AbstractApproximator, prob::AbstractProblem, class::AbstractClass)
         new(approx, prob, class)
     end
 end
@@ -48,11 +49,10 @@ end
 
 function discretize(sys::PDESystem, solver::BVPSolver)
     class = solver.class
-    
+
     if typeof(class) == Linear
 
     elseif typeof(class) == Nonlinear
-
     end
 end
 
@@ -64,7 +64,6 @@ struct IVPSolver <: AbstractFastSolver
         new(approx, class)
     end
 end
-
 
 function discretize(sys::PDESystem, solver::IVPSolver)
     throw("Not implemented")
@@ -79,7 +78,6 @@ struct EVPSolver <: AbstractFastSolver
     end
 end
 
-
 function discretize(sys::PDESystem, solver::EVPSolver)
     throw("Not implemented")
 end
@@ -92,7 +90,6 @@ struct KernelSolver <: AbstractFastSolver
         new(approx, class)
     end
 end
-
 
 function discretize(sys::PDESystem, solver::KernelSolver)
     throw("Not implemented")
