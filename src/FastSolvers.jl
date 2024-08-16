@@ -11,18 +11,14 @@ import ModelingToolkit.PDESystem
 import ModelingToolkit.Equation
 
 include("utils.jl")
-
-include("problems.jl")
-export BVPSolver, IVPSolver, KernelSolver
 export ∇, Δ, Δ²
 
-include("kernels.jl")
-export SquaredExponentialKernel, Matern52Kernel, Matern72Kernel
+include("approximators.jl")
+include("problems.jl")
 
-include("wavelets.jl")
-export DaubechiesWavelets
-
-include("rfnn.jl")
-export WeightedRandomFeatures, SimpleRandomFeatures
+include("solvers.jl")
+export FastSolver
+export BVPSolver, IVPSolver, KernelSolver
+export discretize
 
 end

@@ -1,3 +1,11 @@
+abstract type AbstractDifferentialOperator end
+
+# Abstract differential operators. See docs for detailed description.
+struct ∇ <: AbstractDifferentialOperator end
+struct Δ <: AbstractDifferentialOperator end
+struct Δ² <: AbstractDifferentialOperator end
+
+
 function sample_collocation_points(
         domain::T, num_points::Tuple{Int, Int}, sampler::SamplingAlgorithm) where {T}
     d = length(domain)
