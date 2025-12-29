@@ -2,10 +2,8 @@ using FastSolvers
 using Test
 using ForwardDiff
 using QuasiMonteCarlo
-using SparseArrays
-using LinearAlgebra
-using NonlinearSolve
-using BenchmarkTools
+using SparseArrays: spzeros
+using NonlinearSolve: NonlinearLeastSquaresProblem, solve
 
 @testset "RKHS kernels" begin
     include("kernels/interface.jl")
@@ -23,4 +21,8 @@ end
     include("rfnn/interface.jl")
     include("rfnn/derivatives.jl")
     include("rfnn/function_approx.jl")
+end
+
+@testset "Explicit Imports" begin
+    include("explicit_imports.jl")
 end
