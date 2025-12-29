@@ -1,14 +1,5 @@
 module FastSolvers
-using SparseArrays
-using NonlinearSolve
-using LinearAlgebra
-using QuasiMonteCarlo
-
-import QuasiMonteCarlo.SamplingAlgorithm
-import QuasiMonteCarlo.sample
-
-import ModelingToolkit.PDESystem
-import ModelingToolkit.Equation
+using LinearAlgebra: norm, I
 
 include("utils.jl")
 
