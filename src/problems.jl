@@ -12,3 +12,7 @@ end
 
 struct IVPSolver <: AbstractFastSolver
 end
+
+# Type aliases for convenience
+const BVP = BVPSolver
+const IVP = IVPSolver

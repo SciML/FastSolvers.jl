@@ -3,7 +3,7 @@ abstract type AbstractKernel end
 """SquaredExponentialKernel
 
 """
-struct SquaredExponentialKernel{T} <: AbstractKernel
+struct SquaredExponentialKernel{T <: Real} <: AbstractKernel
     σ::T
 end
 
@@ -27,7 +27,7 @@ end
 """Matern52Kernel
 
 """
-struct Matern52Kernel{T} <: AbstractKernel
+struct Matern52Kernel{T <: Real} <: AbstractKernel
     σ::T
     ρ::T
 end
