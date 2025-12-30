@@ -26,3 +26,7 @@ end
 @testset "Explicit Imports" begin
     include("explicit_imports.jl")
 end
+
+@testset "JET static analysis" begin
+    include("jet.jl")
+end
